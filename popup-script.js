@@ -1,4 +1,4 @@
-var _eleById = document.getElementById.bind(document);
+const _eleById = document.getElementById.bind(document);
 
 class PopupHandler {
     constructor() {
