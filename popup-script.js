@@ -1,4 +1,4 @@
-const _eleByid = document.getElementById.bind(document);
+var _eleById = document.getElementById.bind(document);
 
 class PopupHandler {
     constructor() {
@@ -153,15 +153,15 @@ class PopupHandler {
         document.body.insertAdjacentHTML('beforeend', modalHTML);
 
         // Store references to elements for later use
-        this.modal = _eleByid('custom--popup');
-        this.modalContent = _eleByid('modal--content');
-        this.icon = _eleByid('popup--icon');
-        this.iconText = _eleByid('iconText');
-        this.header = _eleByid('popup--header');
-        this.popupStatus = _eleByid('popup--status');
-        this.popupMsg = _eleByid('popup--msg');
-        this.cancelButton = _eleByid('cancel--button');
-        this.actionButton = _eleByid('action--button');
+        this.modal = _eleById('custom--popup');
+        this.modalContent = _eleById('modal--content');
+        this.icon = _eleById('popup--icon');
+        this.iconText = _eleById('iconText');
+        this.header = _eleById('popup--header');
+        this.popupStatus = _eleById('popup--status');
+        this.popupMsg = _eleById('popup--msg');
+        this.cancelButton = _eleById('cancel--button');
+        this.actionButton = _eleById('action--button');
 
         // Event listeners for closing the popup
         this.cancelButton.onclick = () => this.hidePopup();
